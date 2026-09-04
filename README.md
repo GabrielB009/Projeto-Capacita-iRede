@@ -228,3 +228,34 @@ terraform destroy
 ```
 
 > O comando `terraform destroy` deve ser executado somente após a conclusão e o envio do projeto.
+## 8. Evidências
+
+### 8.1 API — Lista de produtos
+
+Teste do endpoint `GET /products`:
+
+![API - Produtos](evidencias/api-products.png)
+
+### 8.2 API — Criação de pedido
+
+Teste do endpoint `POST /orders`:
+
+![API - Pedido](evidencias/api-orders.png)
+
+### 8.3 Amazon SQS
+
+Mensagem enviada pela API e recebida pela fila:
+
+![Amazon SQS](evidencias/sqs.png)
+
+### 8.4 AWS Lambda e CloudWatch
+
+Registro do processamento do pedido pela Lambda:
+
+![CloudWatch Logs](evidencias/cloudwatch.png)
+
+### 8.5 Terraform Apply
+
+Execução do Terraform após a conclusão da infraestrutura:
+
+![Terraform Apply](evidencias/terraform-apply.png)
